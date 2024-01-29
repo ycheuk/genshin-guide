@@ -76,7 +76,8 @@ nav li.active a {
   height: fit-content;
   width: 75%;
   /* background-color: #312075; */
-  margin: 100px auto auto auto;
+  /* margin: 100px auto auto auto; */
+  margin: auto;
   padding: 30px;
 }
 
@@ -158,6 +159,10 @@ nav li.active a {
 
 .anemo {
   filter: drop-shadow(0 0 0.2rem aqua);
+}
+
+.rarity-4 {
+  background-color: #9972b6;
 }
 
 .rarity-5 {
