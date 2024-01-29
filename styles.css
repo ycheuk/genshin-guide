@@ -118,6 +118,20 @@ nav li.active a {
   padding-bottom: 5px;
 }
 
+.character_archive {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centered-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .character-icon {
   width: 100%;
   height: 70%;
