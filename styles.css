@@ -126,8 +126,8 @@ nav li.active a {
 
 .element-type {
   position: absolute;
-  top: 15px;
-  left: 15px;
+  top: 10px;
+  left: 10px;
   width: 30px;
   height: 30px;
   border-radius: 100px;
