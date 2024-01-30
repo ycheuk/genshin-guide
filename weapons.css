@@ -71,7 +71,7 @@ nav li.active a {
   padding: 30px;
 }
 
-.character-list {
+.weapon-list {
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -83,7 +83,7 @@ nav li.active a {
   box-sizing: border-box;
 }
 
-.character-portrait {
+.weapon-portrait {
   width: 16.66%;
   position: relative;
   display: flex;
@@ -94,8 +94,9 @@ nav li.active a {
   padding: 7px;
 }
 
-.character-name {
+.weapon-name {
   width: 100%;
+  /* height: 30px; */
   font-style: 'Philosopher', Arial;
   font-size: 14px;
   color: #4c5569;
@@ -108,7 +109,7 @@ nav li.active a {
   padding-bottom: 5px;
 }
 
-.character_archive {
+.weapon_archive {
   width: 45px;
   height: 45px;
   display: flex;
@@ -122,47 +123,17 @@ nav li.active a {
   justify-content: center;
 }
 
-.character-icon {
+.weapon-icon {
   width: 100%;
   height: 70%;
   border-radius: 5px 5px 20px 0;
 }
 
-.element-type {
+.star-5 {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 30px;
-  height: 30px;
+  bottom: 50px;
+  height: 16px;
   border-radius: 100px;
-}
-
-.geo {
-  filter: drop-shadow(0 0 0.2rem yellow);
-}
-
-.dendro {
-  filter: drop-shadow(0 0 0.2rem green);
-}
-
-.cryo {
-  filter: drop-shadow(0 0 0.2rem cyan);
-}
-
-.hydro {
-  filter: drop-shadow(0 0 0.2rem blue);
-}
-
-.electro {
-  filter: drop-shadow(0 0 0.2rem purple);
-}
-
-.pyro {
-  filter: drop-shadow(0 0 0.2rem red);
-}
-
-.anemo {
-  filter: drop-shadow(0 0 0.2rem aqua);
 }
 
 .rarity-4 {
