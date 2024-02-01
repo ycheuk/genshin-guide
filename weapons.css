@@ -131,6 +131,7 @@ nav li.active a {
 
 .star-5 {
   position: absolute;
+  top: 90px;
   /* bottom: 50px; */
   height: 16px;
   border-radius: 100px;
