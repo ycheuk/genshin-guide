@@ -131,9 +131,10 @@ nav li.active a {
 
 .star-5 {
   position: absolute;
-  bottom: 50px;
+  /* bottom: 50px; */
   height: 16px;
   border-radius: 100px;
+  /* transform: translateX(-50%); added new */
 }
 
 .rarity-4 {
@@ -142,4 +143,8 @@ nav li.active a {
 
 .rarity-5 {
   background-color: #aa6c2d;
+}
+
+.test {
+  position: relative;
 }
