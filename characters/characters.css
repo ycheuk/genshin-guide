@@ -28,6 +28,11 @@ header {
   align-items: center;
 }
 
+.header-icon {
+  width: 70px;
+  height: 70px;
+}
+
 .header-vision {
   width: 70px;
   height: 70px;
@@ -150,7 +155,7 @@ header {
 
 /* Add border styles for th and tr */
 .weapons-table th, .weapons-table tr {
-  border: 1px solid #ddd; /* Adjust the color and size as needed */
+  border: .5px solid #bcc8cf; /* Adjust the color and size as needed */
 }
 
 /* Additional styling for th and tr if desired */
@@ -192,4 +197,30 @@ h4 {
 
 .no-align {
   text-align: left;
+}
+
+.artifacts-table {
+  margin-right: 100px;
+  margin-left: 50px;
+  border-collapse: collapse;
+  width: 80%;
+  margin-bottom: 50px;
+}
+
+/* Add border styles for th and tr */
+.artifacts-table th, .artifacts-table tr {
+  border: .5px solid #bcc8cf; /* Adjust the color and size as needed */
+}
+
+/* Additional styling for th and tr if desired */
+.artifacts-table th {
+  /* background-color: #f2f2f2; /* Optional background color for header */
+}
+
+.artifacts-table td, .artifacts-table th {
+  padding: 10px; /* Add padding to cells for better readability */
+}
+
+.artifact-pieces {
+  width: 30px;
 }

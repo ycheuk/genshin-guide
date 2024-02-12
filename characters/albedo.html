@@ -16,7 +16,7 @@
     <header>
         <div class="header-content">
             <a href="../index.html" class="back-link">
-              <img src="back-arrow.png" alt="Back Arrow" class="header-icon">
+              <img src="../background/back-arrow.png" alt="Back Arrow" class="header-icon">
             </a>
             <img src="visions/Mondstadt_Geo.png" alt="Mondstadt Geo" class="header-vision">
             <h1 class="header-title">Albedo</h1>
@@ -111,6 +111,24 @@
           </tr>
         </table>
       </div>
+      <div id="artifacts-content" class="artifacts-content" style="display: none;">
+        <table class="artifacts-table">
+          <tr>
+            <th width=30% rowspan="3">Main Stats</th>
+            <th width=70%><img class="artifact-pieces" src="../icons/sands.png" alt="sands"><h4><b>Sands</b>:<br>DEF%</h4></th>
+          </tr>
+          <tr>
+            <th><nobr><img class="artifact-pieces" src="../icons/goblet.png" alt="goblet"><h4><b>Goblet</b>:<br>Geo DMG Bonus</h4></nobr></th>
+          </tr>
+          <tr>
+            <th><img class="artifact-pieces" src="../icons/circlet.png" alt="circlet"><h4><b>Circlet</b>:<br>CRIT Rate or CRIT DMG</h4></th>
+          </tr>
+          <tr>
+            <th>Substats</th>
+            <th colspan="2">DEF%, CRIT Rate, CRIT DMG</th>
+          </tr>
+        </table>
+      </div>
     </section>
     <footer>
       <div class="footer-content">
@@ -128,28 +146,35 @@
             const contentContainer = document.getElementById('contentContainer');
             const profileContent = document.getElementById('profile-content');
             const weaponsContent = document.getElementById('weapons-content');
+            const artifactsContent = document.getElementById('artifacts-content');
 
             if (section === 'profile') {
                 // Show profile content
                 profileContent.style.display = 'block';
                 weaponsContent.style.display = 'none'; // Hide weapons content
+                artifactsContent.style.display = 'none';
                 contentContainer.innerHTML = ''; // Clear other content
             } else if (section === 'weapons') {
                 // Show weapons content
                 profileContent.style.display = 'none'; // Hide profile content
                 weaponsContent.style.display = 'block';
+                artifactsContent.style.display = 'none';
                 contentContainer.innerHTML = ''; // Clear other content
-            } else {
+            } else if (section === 'artifacts') {
+              // Show weapons content
+              profileContent.style.display = 'none'; // Hide profile content
+              weaponsContent.style.display = 'none';
+              artifactsContent.style.display = 'block';
+              contentContainer.innerHTML = ''; // Clear other content
+            }else {
                 // Hide profile and weapons content
                 profileContent.style.display = 'none';
                 weaponsContent.style.display = 'none';
+                artifactsContent.style.display = 'none';
 
                 // Replace with other content
                 let sectionContent = '';
                 switch(section) {
-                    case 'artifacts':
-                        sectionContent = 'Your Artifacts Content Here...';
-                        break;
                     case 'constellations':
                         sectionContent = 'Your Constellations Content Here...';
                         break;
