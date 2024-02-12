@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="characters.css">
+    <title>Genshin Impact Guide</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="back-link">
+              <img src="back-arrow.png" alt="Back Arrow" class="header-icon">
+            </a>
+            <img src="visions/Mondstadt_Geo.png" alt="Mondstadt Geo" class="header-vision">
+            <h1 class="header-title">Albedo</h1>
+        </div>
+    </header>
+    <section class="content">
+      <nav class="navigation">
+          <ul>
+              <li><a href="#" onclick="showContent('profile')">Profile</a></li>
+              <li><a href="#" onclick="showContent('weapons')">Weapons</a></li>
+              <li><a href="#" onclick="showContent('artifacts')">Artifacts</a></li>
+              <li><a href="#" onclick="showContent('constellations')">Constellations</a></li>
+              <li><a href="#" onclick="showContent('talents')">Talents</a></li>
+              <li><a href="#" onclick="showContent('teams')">Teams</a></li>
+          </ul>
+      </nav>
+      <div id="contentContainer" class="content-container">
+        <!-- Initial content -->
+      </div>
+      <div id="profile-content" class="profile-content">
+        <h1 class="name">Albedo</h1>
+        <h2 class="voice">Voice: Mace</h2>
+        <div class="separator"></div>
+        <div class="info-line">
+            <h2 class="right-align profile-description">Birthday</h2>
+            <h2 class="left-align profile-description">9/13</h2>
+        </div>
+        <div class="info-line">
+            <h2 class="right-align profile-description">Affiliation</h2>
+            <h2 class="left-align profile-description">Knights of Favonius</h2>
+        </div>
+        <div class="info-line">
+            <h2 class="right-align profile-description">Vision</h2>
+            <h2 class="left-align profile-description">Geo</h2>
+        </div>
+        <div class="info-line">
+            <h2 class="right-align profile-description">Constellation</h2>
+            <h2 class="left-align profile-description">Princeps Cretaceus</h2>
+        </div>
+        <h2 class="description">A genius known as the Kreideprinz, he is the Chief Alchemist and Captain of the Investigation Team of the Knights of Favonius.</h2>
+      </div>
+      <div id="weapons-content" class="weapons-content" style="display: none;">
+        <table class="weapons-table">
+          <tr>
+            <th width=12%></th>
+            <th width=23%><h1>Weapon</h1></th>
+            <th width=65%><h1>Weapon Information</h1></th>
+          </tr>
+          <tr>
+            <th><h3><b>1st</b></h3></th>
+            <th>
+              <img class="weapon-icon rarity-4" src="../weapons/Cinnabar_Spindle.png" alt=""><h3 class="weapon-name"><b>Cinnabar Spindle</b></h3>
+            </th>
+            <th class="no-align">
+              <h4><b>Base ATK</b>: 454</h4>
+              <h4><b>Bonus Stat</b>: DEF 69.0%</h4>
+              <h4><b>Skill Effect</b>: Elemental Skill DMG is increased by 40% of DEF. The effect will be triggered no more than once every 1.5s and will be cleared 0.1s after the Elemental Skill deals DMG.</h4>
+            </th>
+          </tr>
+          <tr>
+            <th><h3><b>2nd</b></h3></th>
+            <th>
+              <img class="weapon-icon rarity-5" src="../weapons/Primordial_Jade_Cutter.png" alt=""><h3 class="weapon-name"><b>Primordial Jade Cutter</b></h3>
+            </th>
+            <th class="no-align">
+              <h4><b>Base ATK</b>: 542</h4>
+              <h4><b>Bonus Stat</b>: CRIT Rate 44.1%</h4>
+              <h4><b>Skill Effect</b>: HP increased by 20%. Additionally, provides an ATK Bonus based on 1.2% of the wielder’s Max HP.</h4>
+            </th>
+          </tr>
+          <tr>
+            <th><h3><b>3rd</b></h3></th>
+            <th>
+              <img class="weapon-icon rarity-4" src="../weapons/Wolf-Fang.png" alt=""><h3 class="weapon-name"><b>Wolf-Fang</b></h3>
+            </th>
+            <th class="no-align">
+              <h4><b>Base ATK</b>: 510</h4>
+              <h4><b>Bonus Stat</b>: CRIT Rate 27.6%</h4>
+              <h4><b>Skill Effect</b>: DMG dealt by Elemental Skill and Elemental Burst is increased by 16%. When an Elemental Skill hits an opponent, its CRIT Rate will be increased by 2%. When an Elemental Burst hits an opponent, its CRIT Rate will be increased by 2%. Both of these effects last 10s separately, have 4 max stacks, and can be triggered once every 0.1s.</h4>
+            </th>
+          </tr>
+          <tr>
+            <th><h3><b>4th</b></h3></th>
+            <th>
+              <img class="weapon-icon rarity-5" src="../weapons/Freedom-Sworn.png" alt=""><h3 class="weapon-name"><b>Freedom Sword</b></h3>
+            </th>
+            <th class="no-align">
+              <h4><b>Base ATK</b>: 608</h4>
+              <h4><b>Bonus Stat</b>: Elemental Mastery 198</h4>
+              <h4><b>Skill Effect</b>: Increases DMG by 10%. When characters with Freedom-Sworn trigger Elemental Reactions, they gain a Sigil of Rebellion (once every 0.5s). This triggers even if they aren't on the field. When you reach 2 Sigils, they will be consumed which grants nearby party members 20% ATK and 16% Normal, Charged, and Plunging Attack DMG for 12s. Once triggered, you gain no Sigils for 20s. The same buffs from the Millennial Movement series does not stack.</h4>
+            </th>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-content">
+
+      </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Display default content for "Profile" when the page loads
+            showContent('profile');
+        });
+
+        function showContent(section) {
+            const contentContainer = document.getElementById('contentContainer');
+            const profileContent = document.getElementById('profile-content');
+            const weaponsContent = document.getElementById('weapons-content');
+
+            if (section === 'profile') {
+                // Show profile content
+                profileContent.style.display = 'block';
+                weaponsContent.style.display = 'none'; // Hide weapons content
+                contentContainer.innerHTML = ''; // Clear other content
+            } else if (section === 'weapons') {
+                // Show weapons content
+                profileContent.style.display = 'none'; // Hide profile content
+                weaponsContent.style.display = 'block';
+                contentContainer.innerHTML = ''; // Clear other content
+            } else {
+                // Hide profile and weapons content
+                profileContent.style.display = 'none';
+                weaponsContent.style.display = 'none';
+
+                // Replace with other content
+                let sectionContent = '';
+                switch(section) {
+                    case 'artifacts':
+                        sectionContent = 'Your Artifacts Content Here...';
+                        break;
+                    case 'constellations':
+                        sectionContent = 'Your Constellations Content Here...';
+                        break;
+                    case 'talents':
+                        sectionContent = 'Your Talents Content Here...';
+                        break;
+                    case 'teams':
+                        sectionContent = 'Your Teams Content Here...';
+                        break;
+                    default:
+                        sectionContent = 'Default Content';
+                }
+                contentContainer.innerHTML = sectionContent;
+            }
+        }
+    </script>
+</body>
+</html>

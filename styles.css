@@ -137,6 +137,20 @@ nav li.active a {
   border-radius: 100px;
 }
 
+.character-link {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.character-link:hover .character-icon {
+  filter: brightness(80%); /* Adjust the percentage as needed */
+}
+
+.character-link:hover {
+  cursor: pointer;
+}
+
 .geo {
   filter: drop-shadow(0 0 0.2rem yellow);
 }
