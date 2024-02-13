@@ -54,9 +54,9 @@ header {
 }
 
 .navigation ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 0;
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
 }
 
 .navigation li {
@@ -91,13 +91,15 @@ header {
   }
 
   .content-container {
-    padding: 10px; /* Adjust as needed */
+    padding: 10px;
   }
 }
 
 .profile-content {
-  padding: 15px; /* Adjust as needed */
+  position: absolute;
+  padding: 15px;
   width: 30%;
+  right: 0;
 }
 
 .name, .voice, .profile-description, .description  {
@@ -153,18 +155,16 @@ header {
   margin-bottom: 50px;
 }
 
-/* Add border styles for th and tr */
 .weapons-table th, .weapons-table tr {
-  border: .5px solid #bcc8cf; /* Adjust the color and size as needed */
+  border: .5px solid #bcc8cf;
 }
 
-/* Additional styling for th and tr if desired */
 .weapons-table th {
-  /* background-color: #f2f2f2; /* Optional background color for header */ */
+  /* background-color: #f2f2f2; */
 }
 
 .weapons-table td, .weapons-table th {
-  padding: 10px; /* Add padding to cells for better readability */
+  padding: 10px;
 }
 
 .weapon-icon {
@@ -207,20 +207,38 @@ h4 {
   margin-bottom: 50px;
 }
 
-/* Add border styles for th and tr */
 .artifacts-table th, .artifacts-table tr {
-  border: .5px solid #bcc8cf; /* Adjust the color and size as needed */
+  border: .5px solid #bcc8cf;
 }
 
-/* Additional styling for th and tr if desired */
 .artifacts-table th {
-  /* background-color: #f2f2f2; /* Optional background color for header */
+  /* background-color: #f2f2f2; */
 }
 
 .artifacts-table td, .artifacts-table th {
-  padding: 10px; /* Add padding to cells for better readability */
+  padding: 10px;
 }
 
 .artifact-pieces {
   width: 30px;
+}
+
+.artifact-title {
+  margin-left: 50px;
+}
+
+.artifacts-content {
+  display: flex;
+}
+
+.stats-recommendations,
+.artifact-recommendations {
+  flex: 1;
+  margin-right: 20px; /* Adjust as needed to add space between the divs */
+}
+
+.artifact-icon {
+  width: 80px;
+  /* height: 70%; */
+  border-radius: 5px;
 }

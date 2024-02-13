@@ -55,7 +55,7 @@
         </div>
         <h2 class="description">A genius known as the Kreideprinz, he is the Chief Alchemist and Captain of the Investigation Team of the Knights of Favonius.</h2>
       </div>
-      <div id="weapons-content" class="weapons-content" style="display: none;">
+      <div id="weapons-content" class="weapons-content">
         <table class="weapons-table">
           <tr>
             <th width=12%></th>
@@ -108,23 +108,72 @@
           </tr>
         </table>
       </div>
-      <div id="artifacts-content" class="artifacts-content" style="display: none;">
-        <table class="artifacts-table">
-          <tr>
-            <th width=30% rowspan="3">Main Stats</th>
-            <th width=70%><img class="artifact-pieces" src="../icons/sands.png" alt="sands"><h4><b>Sands</b>:<br>DEF%</h4></th>
-          </tr>
-          <tr>
-            <th><nobr><img class="artifact-pieces" src="../icons/goblet.png" alt="goblet"><h4><b>Goblet</b>:<br>Geo DMG Bonus</h4></nobr></th>
-          </tr>
-          <tr>
-            <th><img class="artifact-pieces" src="../icons/circlet.png" alt="circlet"><h4><b>Circlet</b>:<br>CRIT Rate or CRIT DMG</h4></th>
-          </tr>
-          <tr>
-            <th>Substats</th>
-            <th colspan="2">DEF%, CRIT Rate, CRIT DMG</th>
-          </tr>
-        </table>
+      <div id="artifacts-content" class="artifacts-content" style="display: flex;">
+        <div class="stats-recommendations">
+          <h1 class="artifact-title">Geo Sub DPS</h1>
+          <table class="artifacts-table">
+            <tr>
+              <th width=30% rowspan="3">Main Stats</th>
+              <th width=70%><img class="artifact-pieces" src="../icons/sands.png" alt="sands"><h4><b>Sands</b>:<br>DEF%</h4></th>
+            </tr>
+            <tr>
+              <th><nobr><img class="artifact-pieces" src="../icons/goblet.png" alt="goblet"><h4><b>Goblet</b>:<br>Geo DMG Bonus</h4></nobr></th>
+            </tr>
+            <tr>
+              <th><img class="artifact-pieces" src="../icons/circlet.png" alt="circlet"><h4><b>Circlet</b>:<br>CRIT Rate or CRIT DMG</h4></th>
+            </tr>
+            <tr>
+              <th>Substats</th>
+              <th colspan="2">DEF%, CRIT Rate, CRIT DMG</th>
+            </tr>
+          </table>
+        </div>
+        <div class="artifact-recommendations">
+          <h1 class="artifact-title">Best Artifacts</h1>
+          <table class="artifacts-table">
+            <tr>
+              <th>1st</th>
+              <th><img class="artifact-icon rarity-5" src="../artifacts/Bloom_Times.png" alt="Bloom_Times"><br>Husk of Opulent Dreams x4</th>
+            </tr>
+            <tr>
+              <th>2nd</th>
+              <th><img class="artifact-icon rarity-5" src="../artifacts/Golden_Songs_Variation.png" alt="Golden_Songs_Variation"><br>Golden Troupe x4</th>
+            </tr>
+            <tr>
+              <th rowspan="2">3rd</th>
+              <th><img class="artifact-icon rarity-5" src="../artifacts/Bloom_Times.png" alt="Bloom_Times"><br>Husk of Opulent Dreams x2</th>
+            </tr>
+            <tr>
+              <th><img class="artifact-icon rarity-5" src="../artifacts/Golden_Songs_Variation.png" alt="Golden_Songs_Variation"><br>Golden Troupe x2</th>
+            </tr>
+            <tr>
+              <th>4-star</th>
+              <th><img class="artifact-icon rarity-4" src="../artifacts/Guardians_Flower.png" alt="Guardians_Flower"><br>Defender's Will x4</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="constellations-content" class="constellations-content">
+        <h1 class="name">Albedo</h1>
+        <h2 class="voice">Voice: Mace</h2>
+        <div class="separator"></div>
+        <div class="info-line">
+            <h2 class="right-align profile-description">Birthday</h2>
+            <h2 class="left-align profile-description">9/13</h2>
+        </div>
+        <div class="info-line">
+            <h2 class="right-align profile-description">Affiliation</h2>
+            <h2 class="left-align profile-description">Knights of Favonius</h2>
+        </div>
+        <div class="info-line">
+            <h2 class="right-align profile-description">Vision</h2>
+            <h2 class="left-align profile-description">Geo</h2>
+        </div>
+        <div class="info-line">
+            <h2 class="right-align profile-description">Constellation</h2>
+            <h2 class="left-align profile-description">Princeps Cretaceus</h2>
+        </div>
+        <h2 class="description">A genius known as the Kreideprinz, he is the Chief Alchemist and Captain of the Investigation Team of the Knights of Favonius.</h2>
       </div>
     </section>
     <footer>
@@ -135,7 +184,6 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            // Display default content for "Profile" when the page loads
             showContent('profile');
         });
 
@@ -144,37 +192,40 @@
             const profileContent = document.getElementById('profile-content');
             const weaponsContent = document.getElementById('weapons-content');
             const artifactsContent = document.getElementById('artifacts-content');
+            const constellationsContent = document.getElementById('constellations-content');
 
             if (section === 'profile') {
-                // Show profile content
                 profileContent.style.display = 'block';
-                weaponsContent.style.display = 'none'; // Hide weapons content
+                weaponsContent.style.display = 'none';
                 artifactsContent.style.display = 'none';
-                contentContainer.innerHTML = ''; // Clear other content
+                constellationsContent.style.display = 'none';
+                contentContainer.innerHTML = '';
             } else if (section === 'weapons') {
-                // Show weapons content
-                profileContent.style.display = 'none'; // Hide profile content
+                profileContent.style.display = 'none';
                 weaponsContent.style.display = 'block';
                 artifactsContent.style.display = 'none';
-                contentContainer.innerHTML = ''; // Clear other content
+                constellationsContent.style.display = 'none';
+                contentContainer.innerHTML = '';
             } else if (section === 'artifacts') {
-              // Show weapons content
-              profileContent.style.display = 'none'; // Hide profile content
+              profileContent.style.display = 'none';
               weaponsContent.style.display = 'none';
-              artifactsContent.style.display = 'block';
-              contentContainer.innerHTML = ''; // Clear other content
-            }else {
-                // Hide profile and weapons content
+              artifactsContent.style.display = 'flex';
+              constellationsContent.style.display = 'none';
+              contentContainer.innerHTML = '';
+            } else if (section === 'constellations') {
+              profileContent.style.display = 'none';
+              weaponsContent.style.display = 'none';
+              artifactsContent.style.display = 'none';
+              constellationsContent.style.display = 'block';
+              contentContainer.innerHTML = '';
+            } else {
                 profileContent.style.display = 'none';
                 weaponsContent.style.display = 'none';
                 artifactsContent.style.display = 'none';
+                constellationsContent.style.display = 'none';
 
-                // Replace with other content
                 let sectionContent = '';
                 switch(section) {
-                    case 'constellations':
-                        sectionContent = 'Your Constellations Content Here...';
-                        break;
                     case 'talents':
                         sectionContent = 'Your Talents Content Here...';
                         break;

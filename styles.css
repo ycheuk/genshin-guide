@@ -180,9 +180,11 @@ nav li.active a {
 }
 
 .rarity-4 {
-  background-color: #9972b6;
+  background-image: url(background/BG_Item_4_Star.png);
+  background-size: cover;
 }
 
 .rarity-5 {
-  background-color: #aa6c2d;
+  background-image: url(background/BG_Item_5_Star.png);
+  background-size: cover;
 }
