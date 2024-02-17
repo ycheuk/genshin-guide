@@ -193,6 +193,71 @@
           </tr>
         </table>
       </div>
+      <div id="teams-content" class="teams-content">
+      <h1 class="name">Team Options</h1>
+      <table class="teams-table">
+        <tr>
+          <td>
+            <div class="character-portrait">
+              <img src="../character_icons/Arataki_Itto_Icon.png" class="character-icon rarity-5" alt="Arataki_Itto">
+              <img src="../element_types/geo.png" class="element-type geo" alt="geo">
+              <h2 class="character-name">Arataki Itto</h2>
+            </div>
+          </td>
+          <td>
+            <div class="character-portrait">
+              <img src="../character_icons/Albedo_Icon.png" class="character-icon rarity-5" alt="Albedo">
+              <img src="../element_types/geo.png" class="element-type geo" alt="geo">
+              <h2 class="character-name">Albedo</h2>
+            </div>
+          </td>
+          <td>
+            <div class="character-portrait">
+              <img src="../character_icons/Gorou_Icon.png" class="character-icon rarity-4" alt="Gorou">
+              <img src="../element_types/geo.png" class="element-type geo" alt="geo">
+              <h2 class="character-name">Gorou</h2>
+            </div>
+          </td>
+          <td>
+            <div class="character-portrait">
+              <img src="../character_icons/Zhongli_Icon.png" class="character-icon rarity-5" alt="Zhongli">
+              <img src="../element_types/geo.png" class="element-type geo" alt="geo">
+              <h2 class="character-name">Zhongli</h2>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="character-portrait">
+              <img src="../character_icons/Xiao_Icon.png" class="character-icon rarity-5" alt="Xiao">
+              <img src="../element_types/anemo.png" class="element-type anemo" alt="anemo">
+              <h2 class="character-name">Xiao</h2>
+            </div>
+          </td>
+          <td>
+            <div class="character-portrait">
+              <img src="../character_icons/Albedo_Icon.png" class="character-icon rarity-5" alt="Albedo">
+              <img src="../element_types/geo.png" class="element-type geo" alt="geo">
+              <h2 class="character-name">Albedo</h2>
+            </div>
+          </td>
+          <td>
+            <div class="character-portrait">
+              <img src="../character_icons/Jean_Icon.png" class="character-icon rarity-5" alt="Jean">
+              <img src="../element_types/anemo.png" class="element-type anemo" alt="anemo">
+              <h2 class="character-name">Jean</h2>
+            </div>
+          </td>
+          <td>
+            <div class="character-portrait">
+              <img src="../character_icons/Zhongli_Icon.png" class="character-icon rarity-5" alt="Zhongli">
+              <img src="../element_types/geo.png" class="element-type geo" alt="geo">
+              <h2 class="character-name">Zhongli</h2>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
     </section>
     <footer>
       <div class="footer-content">
@@ -211,44 +276,54 @@
             const weaponsContent = document.getElementById('weapons-content');
             const artifactsContent = document.getElementById('artifacts-content');
             const constellationsContent = document.getElementById('constellations-content');
+            const teamsContent = document.getElementById('teams-content');
 
             if (section === 'profile') {
                 profileContent.style.display = 'block';
                 weaponsContent.style.display = 'none';
                 artifactsContent.style.display = 'none';
                 constellationsContent.style.display = 'none';
+                teamsContent.style.display = 'none';
                 contentContainer.innerHTML = '';
             } else if (section === 'weapons') {
                 profileContent.style.display = 'none';
                 weaponsContent.style.display = 'block';
                 artifactsContent.style.display = 'none';
                 constellationsContent.style.display = 'none';
+                teamsContent.style.display = 'none';
                 contentContainer.innerHTML = '';
             } else if (section === 'artifacts') {
-              profileContent.style.display = 'none';
-              weaponsContent.style.display = 'none';
-              artifactsContent.style.display = 'flex';
-              constellationsContent.style.display = 'none';
-              contentContainer.innerHTML = '';
+                profileContent.style.display = 'none';
+                weaponsContent.style.display = 'none';
+                artifactsContent.style.display = 'flex';
+                constellationsContent.style.display = 'none';
+                teamsContent.style.display = 'none';
+                contentContainer.innerHTML = '';
             } else if (section === 'constellations') {
-              profileContent.style.display = 'none';
-              weaponsContent.style.display = 'none';
-              artifactsContent.style.display = 'none';
-              constellationsContent.style.display = 'flex';
-              contentContainer.innerHTML = '';
+                profileContent.style.display = 'none';
+                weaponsContent.style.display = 'none';
+                artifactsContent.style.display = 'none';
+                constellationsContent.style.display = 'flex';
+                teamsContent.style.display = 'none';
+                contentContainer.innerHTML = '';
+            } else if (section === 'teams') {
+                profileContent.style.display = 'none';
+                weaponsContent.style.display = 'none';
+                artifactsContent.style.display = 'none';
+                constellationsContent.style.display = 'none';
+                teamsContent.style.display = 'flex';
+                contentContainer.innerHTML = '';
             } else {
                 profileContent.style.display = 'none';
                 weaponsContent.style.display = 'none';
                 artifactsContent.style.display = 'none';
                 constellationsContent.style.display = 'none';
+                teamsContent.style.display = 'none';
 
                 let sectionContent = '';
                 switch(section) {
                     case 'talents':
                         sectionContent = 'Your Talents Content Here...';
-                        break;
-                    case 'teams':
-                        sectionContent = 'Your Teams Content Here...';
                         break;
                     default:
                         sectionContent = 'Default Content';
