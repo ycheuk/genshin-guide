@@ -139,7 +139,7 @@ nav li.active a {
 
 .character-link {
   text-decoration: none;
-  display: inline-block;
+  display: flex;
   position: relative;
 }
 
