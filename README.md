@@ -13,3 +13,4 @@ Welcome to `Genshin Guides 🎮`, a guide that closely resembles the in-game int
 
 Previews:
 ![](./others/preview1.png)
+![](./others/preview2.png)
