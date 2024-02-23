@@ -44,7 +44,8 @@
           </ul>
       </nav>
       <div id="profile-content" class="profile-content">
-        <h1 class="name">Albedo</h1>
+        <img class="character_wish" src="character_wish/albedo.png" alt="albedo">
+        <div class="profile-details"><h1 class="name">Albedo</h1>
         <h2 class="voice">Voice: Khoi Dao</h2>
         <div class="separator"></div>
         <div class="info-line">
@@ -63,7 +64,7 @@
             <h2 class="right-align profile-description">Constellation</h2>
             <h2 class="left-align profile-description">Princeps Cretaceus</h2>
         </div>
-        <h2 class="description">A genius known as the Kreideprinz, he is the Chief Alchemist and Captain of the Investigation Team of the Knights of Favonius.</h2>
+        <h2 class="description">A genius known as the Kreideprinz, he is the Chief Alchemist and Captain of the Investigation Team of the Knights of Favonius.</h2></div>
       </div>
       <div id="weapons-content" class="weapons-content">
         <table class="weapons-table">
@@ -337,7 +338,7 @@
             const teamsContent = document.getElementById('teams-content');
 
             if (section === 'profile') {
-                profileContent.style.display = 'block';
+                profileContent.style.display = 'flex';
                 weaponsContent.style.display = 'none';
                 artifactsContent.style.display = 'none';
                 constellationsContent.style.display = 'none';

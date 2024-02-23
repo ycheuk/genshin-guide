@@ -105,8 +105,13 @@ header {
 .profile-content {
   position: absolute;
   padding: 15px;
-  width: 30%;
+  width: 75%;
   right: 0;
+}
+
+.character_wish {
+  width: 50%;
+  padding: 10px;
 }
 
 .name, .voice, .profile-description, .description  {
