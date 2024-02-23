@@ -3,23 +3,21 @@ body {
   padding-top: 70px;
   color: #bcc8cf;
   font-family: 'Philosopher', sans-serif;
-  background-image: url("../background/BG_geo.png");
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
   text-shadow: 1px 1px 2px black;
 }
 
 header {
   background-color: rgba(0, 0, 0, 0.5);
   color: #000000;
-  padding: 20px;
   display: flex;
   position: fixed;
   width: 100%;
   height: fit-content;
   top: 0;
   z-index: 1000;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
 }
 
 .header-content {
@@ -33,9 +31,18 @@ header {
   height: 70px;
 }
 
+.header-exit {
+  margin-right: 10px;
+}
+
+.back-link {
+  width: 1px;
+  height: 1px;
+}
+
 .header-vision {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
 }
 
 .header-title {
@@ -244,17 +251,49 @@ h4 {
 }
 
 .constellation {
-  filter: brightness(70%);
+  filter: brightness(80%);
   max-width: 100%;
-  width: 50%;
+  width: 40%;
   height: fit-content;
 }
 
 .constellations-table {
   margin-right: 10px;
   border-collapse: collapse;
-  width: 50%;
+  width: 60%;
   margin-bottom: 10px;
+}
+
+.talents-content {
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  padding: 15px;
+}
+
+.talents-table {
+  border-collapse: collapse;
+  width: 30%;
+}
+
+.talents-table th, .talents-table td {
+  border: .5px solid #bcc8cf;
+  padding: 8px;
+}
+
+.talents-table tr:last-child td {
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .teams-content {
@@ -329,4 +368,8 @@ h4 {
   border-radius: 5px 5px 0 0; /* Border radius */
   display: inline-flex; /* Ensures the div takes up only as much space as necessary */
   overflow: hidden; /* Hides any content that exceeds the dimensions of the wrapper */
+}
+
+.teams-table td {
+  padding-bottom: 10px; /* Adjust the value to your preference */
 }

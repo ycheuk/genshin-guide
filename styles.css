@@ -77,6 +77,7 @@ nav li.active a {
   flex-wrap: wrap;
   align-items: flex-start;
   border-radius: 4px;
+  justify-content: center;
 }
 
 *, :after, :before {
@@ -84,13 +85,12 @@ nav li.active a {
 }
 
 .character-portrait {
-  width: 16.66%;
+  width: 13%;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 14%;
   padding: 7px;
 }
 
@@ -187,4 +187,12 @@ nav li.active a {
 .rarity-5 {
   background-image: url(background/BG_Item_5_Star.png);
   background-size: cover;
+}
+
+.character-icon-wrapper {
+  width: 100%; /* Same width as the character-icon */
+  height: 100%; /* Same height as the character-icon */
+  background-color: #e9e5db; /* Background color */
+  border-radius: 5px 5px 0 0; /* Border radius */
+  overflow: hidden; /* Hides any content that exceeds the dimensions of the wrapper */
 }
