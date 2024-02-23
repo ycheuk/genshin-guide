@@ -171,9 +171,6 @@ header {
   border: .5px solid #bcc8cf;
 }
 
-.weapons-table th {
-  /* background-color: #f2f2f2; */
-}
 
 .weapons-table td, .weapons-table th {
   padding: 10px;
@@ -181,7 +178,6 @@ header {
 
 .weapon-icon {
   width: 80px;
-  /* height: 70%; */
   border-radius: 5px;
 }
 
@@ -223,10 +219,6 @@ h4 {
   border: .5px solid #bcc8cf;
 }
 
-.artifacts-table th {
-  /* background-color: #f2f2f2; */
-}
-
 .artifacts-table td, .artifacts-table th {
   padding: 10px;
 }
@@ -246,12 +238,11 @@ h4 {
 .stats-recommendations,
 .artifact-recommendations {
   flex: 1;
-  margin-right: 20px; /* Adjust as needed to add space between the divs */
+  margin-right: 20px;
 }
 
 .artifact-icon {
   width: 80px;
-  /* height: 70%; */
   border-radius: 5px;
 }
 
@@ -368,14 +359,14 @@ h4 {
 }
 
 .character-icon-wrapper {
-  width: 100px; /* Same width as the character-icon */
-  height: 100px; /* Same height as the character-icon */
-  background-color: #e9e5db; /* Background color */
-  border-radius: 5px 5px 0 0; /* Border radius */
-  display: inline-flex; /* Ensures the div takes up only as much space as necessary */
-  overflow: hidden; /* Hides any content that exceeds the dimensions of the wrapper */
+  width: 100px;
+  height: 100px;
+  background-color: #e9e5db;
+  border-radius: 5px 5px 0 0;
+  display: inline-flex;
+  overflow: hidden;
 }
 
 .teams-table td {
-  padding-bottom: 10px; /* Adjust the value to your preference */
+  padding-bottom: 10px;
 }

@@ -144,7 +144,7 @@ nav li.active a {
 }
 
 .character-link:hover .character-icon {
-  filter: brightness(80%); /* Adjust the percentage as needed */
+  filter: brightness(80%);
 }
 
 .character-link:hover {
@@ -190,9 +190,9 @@ nav li.active a {
 }
 
 .character-icon-wrapper {
-  width: 100%; /* Same width as the character-icon */
-  height: 100%; /* Same height as the character-icon */
-  background-color: #e9e5db; /* Background color */
-  border-radius: 5px 5px 0 0; /* Border radius */
-  overflow: hidden; /* Hides any content that exceeds the dimensions of the wrapper */
+  width: 100%; 
+  height: 100%;
+  background-color: #e9e5db;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
 }
