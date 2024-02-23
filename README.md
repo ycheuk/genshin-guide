@@ -4,7 +4,7 @@
 
 **How to Access:** Simply click [here](https://ycheuk.github.io/genshin-guide/)!
 
-### Description
+### Description <hr>
 Welcome to `Genshin Guides 🎮`, a guide that closely resembles the in-game interface for Genshin Impact. It provides builds for every character.
 
 `Genshin Guides` was made by [@ycheuk](https://github.com/ycheuk) as a personal for-fun project ⭐! This was coded with front-end HTML, CSS and Javascript.
