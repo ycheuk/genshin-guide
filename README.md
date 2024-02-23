@@ -1,8 +1,8 @@
 # 🎮 Genshin Guide 🌟
 
-**Status ⚙️🔨:** Work in Progress! Only Albedo has a complete guide.
+**Status ⚙️ 🔨:** Work in Progress! Only Albedo has a complete guide.
 
-**How to Access:** Simply click the link: [Genshin Guide](https://ycheuk.github.io/genshin-guide/)
+**How to Access:** Simply click [here](https://ycheuk.github.io/genshin-guide/)!
 
 ### Description
 Welcome to `Genshin Guides 🎮`, a guide that closely resembles the in-game interface for Genshin Impact. It provides builds for every character.
@@ -11,4 +11,5 @@ Welcome to `Genshin Guides 🎮`, a guide that closely resembles the in-game int
 
 ❗❗Please give feedback on what I should improve before I move forward with the other characters, mainly the guide for Albedo. This can be design-wise, what looks off or not great, suggestions for improvement, or if a particular section seems off due to screen size differences.
 
-Feel free to explore the guide and provide feedback to help improve the user experience. Thank you!
+Previews:
+![](./others/preview1)
