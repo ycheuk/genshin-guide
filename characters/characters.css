@@ -86,7 +86,6 @@ header {
   margin: 15px;
 }
 
-
 @media (max-width: 768px) {
   .content {
     flex-direction: column;
@@ -107,6 +106,15 @@ header {
   padding: 15px;
   width: 75%;
   right: 0;
+}
+
+.profile-content h4 {
+  margin: 5px;
+}
+
+.profile-content h1 {
+  margin: 5px;
+  margin-left: 0;
 }
 
 .character_wish {
