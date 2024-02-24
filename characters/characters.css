@@ -110,6 +110,7 @@ header {
 
 .profile-content h4 {
   margin: 5px;
+  margin-left: 0;
 }
 
 .profile-content h1 {
@@ -164,7 +165,7 @@ header {
 }
 
 .left-align {
-  text-align: left;
+  text-align: right;
   margin: 0;
 }
 

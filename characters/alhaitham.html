@@ -35,35 +35,44 @@
     <section class="content">
       <nav class="navigation">
           <ul>
-              <li><a href="#" onclick="showContent('profile')">Profile</a></li>
-              <li><a href="#" onclick="showContent('weapons')">Weapons</a></li>
-              <li><a href="#" onclick="showContent('artifacts')">Artifacts</a></li>
-              <li><a href="#" onclick="showContent('constellations')">Constellations</a></li>
-              <li><a href="#" onclick="showContent('talents')">Talents</a></li>
-              <li><a href="#" onclick="showContent('teams')">Teams</a></li>
+              <li><a href="#profile" onclick="showContent('profile')">Profile</a></li>
+              <li><a href="#weapons" onclick="showContent('weapons')">Weapons</a></li>
+              <li><a href="#artifacts" onclick="showContent('artifacts')">Artifacts</a></li>
+              <li><a href="#constellations" onclick="showContent('constellations')">Constellations</a></li>
+              <li><a href="#talents" onclick="showContent('talents')">Talents</a></li>
+              <li><a href="#teams" onclick="showContent('teams')">Teams</a></li>
           </ul>
       </nav>
       <div id="profile-content" class="profile-content">
-        <h1 class="name">Alhaitham</h1>
-        <h2 class="voice">Voice: Nazeeh Tarsga</h2>
-        <div class="separator"></div>
-        <div class="info-line">
-            <h2 class="right-align profile-description">Birthday</h2>
-            <h2 class="left-align profile-description">2/11</h2>
+        <img class="character_wish" src="character_wish/alhaitham.png" alt="alhaitham">
+        <div class="profile-details">
+          <h1 class="name" style="font-size: 30px;">Alhaitham</h1>
+          <h1 style="font-size: 20px; color: #deb76c;">Admonishing Instruction</h1>
+          <h2 class="voice">Voice:</h2>
+          <h4 style="margin-left: 20px;">English: <a href="https://www.imdb.com/name/nm6004732/" style="white-space: nowrap; color: #deb76c;">Nazeeh Tarsha</a></h4>
+          <h4 style="margin-left: 20px;">Chinese: <a href="https://zh.moegirl.org.cn/Mace" style="white-space: nowrap; color: #deb76c;">Yang Chaoran (杨超然)</a></h4>
+          <h4 style="margin-left: 20px;">Japanese: <a href="http://en.wikipedia.org/wiki/Kenji_Nojima" style="white-space: nowrap; color: #deb76c; font-size: 15px;">Umehara Yuuichirou (梅原 裕一郎)</a></h4>
+          <h4 style="margin-left: 20px;">Korean: <a href="https://ko.wikipedia.org/wiki/%EA%B9%80%EB%AA%85%EC%A4%80_(%EC%84%B1%EC%9A%B0)" style="white-space: nowrap; color: #deb76c;">Jun Seung Hwa (전승화)</a></h4>
+          <div class="separator"></div>
+          <div class="info-line">
+              <h2 class="right-align profile-description">Birthday</h2>
+              <h2 class="left-align profile-description">2/11</h2>
+          </div>
+          <div class="info-line">
+              <div><h2 class="right-align profile-description">Affiliation</h2></div>
+              <div><h2 class="left-align profile-description">Sumeru Akademiya</h2>
+              <h2 class="left-align profile-description">Haravatat</h2></div>
+          </div>
+          <div class="info-line">
+              <h2 class="right-align profile-description">Vision</h2>
+              <h2 class="left-align profile-description">Dendro</h2>
+          </div>
+          <div class="info-line">
+              <h2 class="right-align profile-description">Constellation</h2>
+              <h2 class="left-align profile-description">Vultur Volans</h2>
+          </div>
+          <h2 class="description">A genius known as the Kreideprinz, he is the Chief Alchemist and Captain of the Investigation Team of the Knights of Favonius.</h2>
         </div>
-        <div class="info-line">
-            <h2 class="right-align profile-description">Affiliation</h2>
-            <h2 class="left-align profile-description">Sumeru Akademiya</h2>
-        </div>
-        <div class="info-line">
-            <h2 class="right-align profile-description">Vision</h2>
-            <h2 class="left-align profile-description">Dendro</h2>
-        </div>
-        <div class="info-line">
-            <h2 class="right-align profile-description">Constellation</h2>
-            <h2 class="left-align profile-description">Vultur Volans</h2>
-        </div>
-        <h2 class="description">The current scribe of the Sumeru Akademiya, a man endowed with extraordinary intelligence and talent. He lives free — free from the searching eyes of ordinary people, anyway.</h2>
       </div>
       <div id="weapons-content" class="weapons-content">
         <table class="weapons-table">
@@ -156,7 +165,7 @@
             </tr>
             <tr>
               <th>Substats</th>
-              <th colspan="2">Elemental Mastery, CRIT Rate, CRIT DMG, Energy Recharge, ATK%</th>
+              <th colspan="2">Elemental Mastery, CRIT Rate, CRIT DMG, ATK%</th>
             </tr>
           </table>
         </div>
@@ -225,10 +234,56 @@
           </tr>
         </table>
       </div>
+      <div id="talents-content" class="talents-content">
+        <div><h1 class="name">Talent Priority</h1></div>
+        <div class="row"><table class="talents-table">
+          <tr>
+            <td></td>
+            <td><b>Main DPS</b></td>
+          </tr>
+          <tr>
+            <td>1st</td>
+            <td>Elemental Skill</td>
+          </tr>
+          <tr>
+            <td>2nd</td>
+            <td>Elemental Burst</td>
+          </tr>
+          <tr>
+            <td>3rd</td>
+            <td>Normal Attack</td>
+          </tr>
+          <tr>
+            <td colspan="2"><h4>You should prioritize Albedo's elemental skill first as most of his DMG comes from that talent.</h4></td>
+          </tr>
+        </table>
+        <table class="talents-table">
+          <tr>
+            <td></td>
+            <td><b>Burst DPS</b></td>
+          </tr>
+          <tr>
+            <td>1st</td>
+            <td>Elemental Burst</td>
+          </tr>
+          <tr>
+            <td>2nd</td>
+            <td>Elemental Skill</td>
+          </tr>
+          <tr>
+            <td>3rd</td>
+            <td>Normal Attack</td>
+          </tr>
+          <tr>
+            <td colspan="2"><h4>If you are using him as a burst DPS, then his elemental burst should get priority.</h4></td>
+          </tr>
+        </table></div>
+      </div>
       <div id="teams-content" class="teams-content">
       <h1 class="name">Team Options</h1>
       <table class="teams-table">
         <tr>
+          <td>1st</td>
           <td>
             <div class="character-portrait">
               <div class="character-icon-wrapper"><img src="../character_icons/Arataki_Itto_Icon.png" class="character-icon rarity-5" alt="Arataki_Itto"></div>
@@ -259,6 +314,7 @@
           </td>
         </tr>
         <tr>
+          <td>2nd</td>
           <td>
             <div class="character-portrait">
               <div class="character-icon-wrapper"><img src="../character_icons/Xiao_Icon.png" class="character-icon rarity-5" alt="Xiao"></div>
@@ -308,38 +364,52 @@
             const weaponsContent = document.getElementById('weapons-content');
             const artifactsContent = document.getElementById('artifacts-content');
             const constellationsContent = document.getElementById('constellations-content');
+            const talentsContent = document.getElementById('talents-content');
             const teamsContent = document.getElementById('teams-content');
 
             if (section === 'profile') {
-                profileContent.style.display = 'block';
+                profileContent.style.display = 'flex';
                 weaponsContent.style.display = 'none';
                 artifactsContent.style.display = 'none';
                 constellationsContent.style.display = 'none';
+                talentsContent.style.display = 'none';
                 teamsContent.style.display = 'none';
             } else if (section === 'weapons') {
                 profileContent.style.display = 'none';
                 weaponsContent.style.display = 'block';
                 artifactsContent.style.display = 'none';
                 constellationsContent.style.display = 'none';
+                talentsContent.style.display = 'none';
                 teamsContent.style.display = 'none';
             } else if (section === 'artifacts') {
                 profileContent.style.display = 'none';
                 weaponsContent.style.display = 'none';
                 artifactsContent.style.display = 'flex';
                 constellationsContent.style.display = 'none';
+                talentsContent.style.display = 'none';
                 teamsContent.style.display = 'none';
             } else if (section === 'constellations') {
                 profileContent.style.display = 'none';
                 weaponsContent.style.display = 'none';
                 artifactsContent.style.display = 'none';
                 constellationsContent.style.display = 'flex';
+                talentsContent.style.display = 'none';
                 teamsContent.style.display = 'none';
             } else if (section === 'teams') {
                 profileContent.style.display = 'none';
                 weaponsContent.style.display = 'none';
                 artifactsContent.style.display = 'none';
                 constellationsContent.style.display = 'none';
+                talentsContent.style.display = 'none';
                 teamsContent.style.display = 'flex';
+            } else if (section === 'talents') {
+                profileContent.style.display = 'none';
+                weaponsContent.style.display = 'none';
+                artifactsContent.style.display = 'none';
+                constellationsContent.style.display = 'none';
+                talentsContent.style.display = 'none';
+                talentsContent.style.display = 'block';
+                teamsContent.style.display = 'none';
             } else {
                 profileContent.style.display = 'none';
                 weaponsContent.style.display = 'none';
