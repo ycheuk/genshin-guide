@@ -59,6 +59,44 @@ nav li.active a {
   padding: 30px;
 }
 
+.filters {
+  margin-bottom: 20px;
+  width: 100%;
+  background: #303b7a;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.filters .filters-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.filters .filters-list .filters-item {
+    max-width: 50px;
+    max-height: 40px;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .3s;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.filters .filters-list .filters-divider {
+    width: 1px;
+    height: 30px;
+    background: #4d5fc4;
+    margin: 0 20px;
+}
+
+.filters .filters-list .filters-item.active {
+    background: #4d5fc4;
+}
+
 .character-list {
   padding: 20px;
   display: flex;
@@ -139,7 +177,7 @@ nav li.active a {
   cursor: pointer;
 }
 
-.geo {
+/* .geo {
   filter: drop-shadow(0 0 0.2rem yellow);
 }
 
@@ -165,7 +203,7 @@ nav li.active a {
 
 .anemo {
   filter: drop-shadow(0 0 0.2rem aqua);
-}
+} */
 
 .rarity-4 {
   background-image: url(background/BG_Item_4_Star.png);
