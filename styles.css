@@ -62,7 +62,7 @@ nav li.active a {
 .filters {
   margin-bottom: 20px;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
   padding: 5px;
   border-radius: 4px;
 }
@@ -94,7 +94,7 @@ nav li.active a {
 }
 
 .filters .filters-list .filters-item.active {
-    background: #d2bc8e;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .character-list {
