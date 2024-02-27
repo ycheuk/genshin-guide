@@ -41,6 +41,7 @@
               <li><a href="#constellations" onclick="showContent('constellations')">Constellations</a></li>
               <li><a href="#talents" onclick="showContent('talents')">Talents</a></li>
               <li><a href="#teams" onclick="showContent('teams')">Teams</a></li>
+              <li><a href="#starter-build" onclick="showContent('starter')">Starter Build</a></li>
           </ul>
       </nav>
       <div id="profile-content" class="profile-content">
@@ -330,6 +331,44 @@
         </tr>
       </table>
     </div>
+    <div id="starter-content" class="starter-content" style="display: flex;">
+      <div class="artifact-recommendations" style="margin-right: 0;">
+        <h1 class="artifact-title">Best Starter Artifacts</h1>
+        <table class="artifacts-table">
+          <tr>
+            <th width=12%></th>
+            <th><h1>Artifact</h1></th>
+            <th><h1>Artifact Information</h1></th>
+          </tr>
+          <tr>
+            <th><img src="../icons/rarity_4.png" style="width: 30px;"></th>
+            <th><img class="artifact-icon rarity-4" src="../artifacts/Guardians_Flower.png" alt="Guardians_Flower"><br>Defender's Will x4</th>
+          </tr>
+        </table>
+      </div>
+      <div id="weapons-content" class="weapons-content">
+        <h1 class="artifact-title">Best Starter Weapons</h1>
+        <table class="weapons-table">
+          <tr>
+            <th width=12%></th>
+            <th width=23%><h1>Weapon</h1></th>
+            <th width=65%><h1>Weapon Information</h1></th>
+          </tr>
+          <tr>
+            <th><img src="../icons/rarity_4.png" style="width: 30px;"></th>
+            <th>
+              <img class="weapon-icon rarity-4" src="../weapons/Cinnabar_Spindle.png" alt=""><h3 class="weapon-name"><b>Cinnabar Spindle</b></h3>
+            </th>
+            <th class="no-align">
+              <h4><b>Base ATK</b>: 454</h4>
+              <h4><b>Bonus Stat</b>: DEF 69.0%</h4>
+              <h4><b>Skill Effect</b>: Elemental Skill DMG is increased by 40% of DEF. The effect will be triggered no more than once every 1.5s and will be cleared 0.1s after the Elemental Skill deals DMG.</h4>
+            </th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    </div>
     </section>
     <footer>
       <div class="footer-content">
@@ -337,81 +376,6 @@
       </div>
     </footer>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            showContent('profile');
-        });
-
-        function showContent(section) {
-            const contentContainer = document.getElementById('contentContainer');
-            const profileContent = document.getElementById('profile-content');
-            const weaponsContent = document.getElementById('weapons-content');
-            const artifactsContent = document.getElementById('artifacts-content');
-            const constellationsContent = document.getElementById('constellations-content');
-            const talentsContent = document.getElementById('talents-content');
-            const teamsContent = document.getElementById('teams-content');
-
-            if (section === 'profile') {
-                profileContent.style.display = 'flex';
-                weaponsContent.style.display = 'none';
-                artifactsContent.style.display = 'none';
-                constellationsContent.style.display = 'none';
-                talentsContent.style.display = 'none';
-                teamsContent.style.display = 'none';
-            } else if (section === 'weapons') {
-                profileContent.style.display = 'none';
-                weaponsContent.style.display = 'block';
-                artifactsContent.style.display = 'none';
-                constellationsContent.style.display = 'none';
-                talentsContent.style.display = 'none';
-                teamsContent.style.display = 'none';
-            } else if (section === 'artifacts') {
-                profileContent.style.display = 'none';
-                weaponsContent.style.display = 'none';
-                artifactsContent.style.display = 'flex';
-                constellationsContent.style.display = 'none';
-                talentsContent.style.display = 'none';
-                teamsContent.style.display = 'none';
-            } else if (section === 'constellations') {
-                profileContent.style.display = 'none';
-                weaponsContent.style.display = 'none';
-                artifactsContent.style.display = 'none';
-                constellationsContent.style.display = 'flex';
-                talentsContent.style.display = 'none';
-                teamsContent.style.display = 'none';
-            } else if (section === 'teams') {
-                profileContent.style.display = 'none';
-                weaponsContent.style.display = 'none';
-                artifactsContent.style.display = 'none';
-                constellationsContent.style.display = 'none';
-                talentsContent.style.display = 'none';
-                teamsContent.style.display = 'flex';
-            } else if (section === 'talents') {
-                profileContent.style.display = 'none';
-                weaponsContent.style.display = 'none';
-                artifactsContent.style.display = 'none';
-                constellationsContent.style.display = 'none';
-                talentsContent.style.display = 'none';
-                talentsContent.style.display = 'block';
-                teamsContent.style.display = 'none';
-            } else {
-                profileContent.style.display = 'none';
-                weaponsContent.style.display = 'none';
-                artifactsContent.style.display = 'none';
-                constellationsContent.style.display = 'none';
-                teamsContent.style.display = 'none';
-
-                let sectionContent = '';
-                switch(section) {
-                    case 'talents':
-                        sectionContent = 'Your Talents Content Here...';
-                        break;
-                    default:
-                        sectionContent = 'Default Content';
-                }
-                contentContainer.innerHTML = sectionContent;
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
