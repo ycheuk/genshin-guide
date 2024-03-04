@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function applyFilters() {
         const activeFilters = Array.from(document.querySelectorAll(".filters-item.active")).map(filter => filter.getAttribute("filter"));
 
-        characterList.forEach((character) => {
+        characterList.forEach((character) => {  
             const characterElement = character.querySelector(".element-type");
             const characterWeapon = characterElement.classList[1]; // Assumes the weapon class is the second class
             const characterClasses = character.querySelector(".character-icon").classList;
